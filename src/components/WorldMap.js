@@ -8,10 +8,6 @@ const WorldMap = () => {
   const navigate = useNavigate();
   const [content, setContent] = useState("");
 
-  const handleCountryClick = (countryCode) => {
-    navigate(`/country/${countryCode}`);
-  };
-
   const geoUrl = 'https://unpkg.com/world-atlas@1.1.4/world/110m.json';
 
   const markers = [
@@ -20,7 +16,7 @@ const WorldMap = () => {
       name: "Sau Paulo",
       coordinates: [-58.3816, -34.6037]
     }
-  ]
+  ];
 
   return (
     <div style={{
@@ -31,22 +27,22 @@ const WorldMap = () => {
       justifyContent: 'center',
       alignItems: 'center'
     }}>
-      <Tooltip>{content}</Tooltip>
+      <Tooltip place="top" type="dark" effect="float" />
       <div style={{ width: "1400px", borderStyle: 'double' }}>
-        <ComposableMap data-tip="">
-          <ZoomableGroup zoom={1}>
+        <ComposableMap>
             <Geographies geography={geoUrl}>
               {({ geographies }) =>
                 geographies.map((geo) => (
-                  <Geography 
-                    key={geo.rsmKey} 
-                    geography={geo} 
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    data-tip={geo.properties.NAME}
                     onMouseEnter={() => {
                       const { NAME } = geo.properties;
-                      setContent(`${NAME}`);
+                      setContent(NAME);
                     }}
                     onMouseLeave={() => {
-                      setContent("");
+                      setContent('');
                     }}
                     style={{
                       hover: { fill: "#F53", outline: "none" },
@@ -56,7 +52,6 @@ const WorldMap = () => {
                 ))
               }
             </Geographies>
-          </ZoomableGroup>
         </ComposableMap>
       </div>
     </div>
