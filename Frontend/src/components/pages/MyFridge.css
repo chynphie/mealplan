@@ -1,3 +1,91 @@
 div {
     padding: 20px;
 }
+/* General styles for the fridge page */
+.container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  h2 {
+    color: #34495e;
+    font-size:large;
+    font-weight: bold;
+    margin: auto;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+  }
+  
+  .form input {
+    padding: 10px 15px;
+    padding-left: 40px; /* For space if using icons */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .form input:focus {
+    outline: none;
+    border-color: #2980b9;
+    background-color: #fff;
+  }
+  
+  /* Styling for icons inside input fields */
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Collapsible categories */
+  .collapsible {
+    margin: 10px 0;
+    background-color: #bcd8ea;
+    border-radius: 10px;
+    height: min-content;
+  }
+  
+  .collapsible-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .collapsible-content.open {
+    display: block;
+  }
+  
