@@ -35,6 +35,7 @@ function App() {
               <li><Link to="/meal-plan">Meal Plan</Link></li>
               <li><Link to="/favorites">Favorites</Link></li>
               <li><Link to="/MyFridge">MyFridge</Link></li>
+              <li><Link to="/MyFridge">Login</Link></li>
             </ul>
           </nav>
         </header>
