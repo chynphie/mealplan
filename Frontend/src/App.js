@@ -14,6 +14,14 @@ function App() {
     .then(data => console.log(data))
     .catch(err => console.log(err));
   }, [])
+
+  useEffect(()=> {
+    fetch('http://localhost:8081/favourites')
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+  }, [])
+  
   const [favorites, setFavorites] = useState([]);
 
   const addFavorite = (meal) => {
@@ -28,13 +36,13 @@ function App() {
     <Router>
       <div>
         <header>
-          <h1>Healthy Meal Planner</h1>
-          <p>Eat healthy and on time, effortlessly!</p>
+          <h1>Meal Planner</h1>
+          {/* <p>Eat healthy and on time</p> */}
           <nav>
             <ul>
               <li><Link to="/meal-plan">Meal Plan</Link></li>
               <li><Link to="/favorites">Favorites</Link></li>
-              <li><Link to="/MyFridge">MyFridge</Link></li>
+              <li><Link to="/MyFridge">My Fridge</Link></li>
               <li><Link to="/MyFridge">Login</Link></li>
             </ul>
           </nav>

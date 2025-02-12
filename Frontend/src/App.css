@@ -13,20 +13,40 @@ body {
 }
 
 header {
-  border-radius: 10px;
-  background-color: #afc4b1;
+  /* border-radius: 10px; */
+  /* background-color: #afc4b1; */
   color: white;
   padding: 1rem 2rem;
   display: flex; /* Use Flexbox to align items */
   justify-content: space-between; /* Space out header content and nav */
   align-items: center; /* Center items vertically */
   text-align: left;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  -webkit-box-shadow: 0px 38px 14px 29px rgb(220 220 220 / 47%);
+  box-shadow: 1px -8px 14px 29px rgb(235 235 235 / 47%);
+
+}
+
+h1{
+  font-family: -webkit-body;
+}
+
+collapsible {
+  margin: 13px 0;
+  background-color: #ececec;
+  border-radius: 6px;
+  height: min-content;
+  border: 1px solid #c9c9c9;
+  padding: 10px 10px 10px;
 }
 
 /* Navigation Bar */
 nav {
   background-color: #ffffff;
-  overflow: hidden;
   border-radius: 15px;
   height: 55px;
 }
@@ -38,8 +58,12 @@ nav ul {
   padding: 0;
 }
 
+
 nav ul li {
-  padding: 14px 20px;
+  padding: 7px 13px;
+  border: 1px #677c68 solid;
+  border-radius: 20px;
+  margin: 0 3px 1px;
 }
 
 nav ul li a {
@@ -48,6 +72,11 @@ nav ul li a {
   text-decoration: none;
   display: block;
   font-weight: bold;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  /* margin-bottom: 1rem; */
 }
 
 /* nav bar cursor color */
@@ -97,10 +126,6 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-ul li:last-child {
-  border-bottom: none;
 }
 
 select {
