@@ -13,7 +13,7 @@ exclude:
   - vendor
   - .git
   - .github
-  - .Backend/node_modules
+  - Backend/node_modules
 # Plugins (if you're using any)
 plugins:
   - jekyll-feed
