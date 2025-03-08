@@ -2,7 +2,7 @@
 title: meal-planner
 description: "A simple meal planner for the week"
 baseurl: "" # The subpath of your site, e.g., /blog
-url: "" # The base hostname and protocol for your site, e.g., https://yourusername.github.io
+url: "https://chynphie.github.io/mealplan/" # The base hostname and protocol for your site, e.g., https://yourusername.github.io
 theme: jekyll-theme-minimal # Or any other theme you're using
 
 # Exclude unnecessary files from processing
