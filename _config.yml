@@ -13,7 +13,7 @@ exclude:
   - vendor
   - .git
   - .github
-
+  - Backend/node_modules/balanced-match/README.md
 # Plugins (if you're using any)
 plugins:
   - jekyll-feed
