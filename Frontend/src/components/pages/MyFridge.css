@@ -1,0 +1,120 @@
+/* General styles for the fridge page */
+.container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  h2 {
+    color: #34495e;
+    font-size:large;
+    font-weight: bold;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+  }
+  
+  .form input {
+    padding: 10px 15px;
+    padding-left: 40px; /* For space if using icons */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .form input:focus {
+    outline: none;
+    border-color: #2980b9;
+    background-color: #fff;
+  }
+  
+  /* Styling for icons inside input fields */
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Collapsible categories */
+  .collapsible {
+    margin: 10px 7px;
+    background-color: #ebebeb;
+    border-radius: 4px;
+    height: auto;
+    padding: 2px;
+  }
+  
+  .collapsible-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .collapsible-content.open {
+    display: block;
+  }
+
+  .suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Enable scrolling */
+    border: 1px solid #ccc; /* Add border around the list */
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    background-color: #ffffff; /* White background */
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee; /* Subtle border between items */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .suggestion-item:last-child {
+    border-bottom: none; /* Remove the last item's bottom border */
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+  }
+  
+  .suggestion-item:active {
+    background-color: #f1f1f1; /* Darker on active click */
+  }
+  
+  
