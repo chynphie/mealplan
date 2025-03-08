@@ -1,14 +1,14 @@
 # MealPlan Website
 
 ## Description
-MealPlan is a web application that helps users create, manage, and customize their weekly meal plans. It provides a user-friendly interface to explore recipes, generate grocery lists, and track nutritional information.
+MealPlan is a web application that helps users create, manage, and customize their weekly meal plans. It provides a user-friendly interface to add food recipes, generate grocery lists, and track nutritional information.
 1. <br>**viewing your food:**<br>
 <img width="1381" alt="image" src="https://github.com/user-attachments/assets/8f60a003-5a17-43d9-ae70-ca828997be6c" /><br>
 
 2. <br>**adding food here:**<br> The food listings are automatically populated using the Nutritionix database as a data source, you are able to select from the options.
 <img width="712" alt="image" src="https://github.com/user-attachments/assets/106ea319-20fe-4086-bf2f-1550b293af3b" />
 
-3. After adding the food navigate to 'meal plan' 
+more features comming up..
 
 
 ## Technologies Used
