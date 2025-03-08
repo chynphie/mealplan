@@ -2,10 +2,10 @@
 
 ## Description
 MealPlan is a web application that helps users create, manage, and customize their weekly meal plans. It provides a user-friendly interface to explore recipes, generate grocery lists, and track nutritional information.
-viewing your food:
-<img width="1381" alt="image" src="https://github.com/user-attachments/assets/8f60a003-5a17-43d9-ae70-ca828997be6c" />
+1. <br>**viewing your food:**<br>
+<img width="1381" alt="image" src="https://github.com/user-attachments/assets/8f60a003-5a17-43d9-ae70-ca828997be6c" /><br>
 
-adding food here:
+2. <br>**adding food here:**<br>
 <img width="858" alt="image" src="https://github.com/user-attachments/assets/177e31ac-a989-4058-852d-302ced46f226" />
 
 
