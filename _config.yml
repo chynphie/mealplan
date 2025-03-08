@@ -1,0 +1,27 @@
+# _config.yml
+title: meal-planner
+description: "A simple meal planner for the week"
+baseurl: "" # The subpath of your site, e.g., /blog
+url: "" # The base hostname and protocol for your site, e.g., https://yourusername.github.io
+theme: jekyll-theme-minimal # Or any other theme you're using
+
+# Exclude unnecessary files from processing
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .git
+  - .github
+  - node_modules
+  - Frontend/node_modules
+  - Backend/node_modules
+
+# Plugins (if you're using any)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown processor (optional)
+markdown: kramdown
+# Other settings
