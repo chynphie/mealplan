@@ -13,9 +13,6 @@ exclude:
   - vendor
   - .git
   - .github
-  - node_modules
-  - Frontend/node_modules
-  - Backend/node_modules
 
 # Plugins (if you're using any)
 plugins:
