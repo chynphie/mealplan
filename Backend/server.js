@@ -84,10 +84,10 @@ app.get("/my_fridge", async (req, res) => {
 
 //post route:
 app.post("/my_fridge", async (req, res) => {
-  console.log(req.body);
-
+  
   const { name, category, quantity, unit } = req.body; // Get data from request body
-
+  console.log(req.body);
+  
   if (!name || !category || !quantity || !unit) {
     return res.status(400).json({ error: "All fields are required" });
   }

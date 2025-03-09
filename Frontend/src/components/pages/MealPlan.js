@@ -12,9 +12,7 @@ function MealPlan({ addFavorite }) {
   };
 
   return (
-    <div>
-      <h2>Your Weekly Meal Plan</h2>
-      
+    <div>      
       <button onClick={generateMealPlan}>Generate Meal Plan</button>
       <ul>
         {mealPlan.map((meal, index) => (

@@ -60,17 +60,19 @@ const MyFridge = () => {
     
     const myData = {
       name: foodName,
-      unit: category || "unknown",
+      unit: 'g',
       quantity: amount,
-
+      category: 'fruits',
     };
+    console.log(JSON.stringify(myData));
+    
     try {
       const result = await fetch('http://localhost:8081/my_fridge', {
         method: 'POST',
-        Headers: {
+        headers: {
           'Content-Type': 'application/json'
         },
-        Body: JSON.stringify(myData)
+        body: JSON.stringify(myData)
       });
   
       const resultInJson = await result.json(); // Parse response as JSON
@@ -160,23 +162,23 @@ const MyFridge = () => {
             />
             <button onClick={handleAddItem}>Add to your fridge</button>
           </div>
-          <div className="suggestions">
-            <ul className="suggestions-list">
-              {suggestions.map((suggestion, index) => (
-                <li
-                  key={index}
-                  className="suggestion-item"
-                  onClick={() => {
-                    setFoodName(suggestion); // Set the food name to the selected suggestion
-                    setSuggestions([]); // Clear suggestions after selection
-                  }}
-                >
-                  {suggestion}
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
+      </div>
+      <div className="suggestions">
+        <ul className="suggestions-list">
+          {suggestions.map((suggestion, index) => (
+            <li
+              key={index}
+              className="suggestion-item"
+              onClick={() => {
+                setFoodName(suggestion); // Set the food name to the selected suggestion
+                setSuggestions([]); // Clear suggestions after selection
+              }}
+            >
+              {suggestion}
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Display fridge contents */}
